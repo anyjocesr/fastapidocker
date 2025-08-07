@@ -25,3 +25,6 @@ def singin(user_id:str):
 def health():
     return {"hola": "fastapi"}
 
+@router.head("/")
+def health():
+    return {"hola": "fastapi"}
