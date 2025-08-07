@@ -20,3 +20,8 @@ def singin(user_id:str):
     raise HTTPException(status_code=404, detail=response.message)
 
 
+
+@router.get("/")
+def health():
+    return {"hola": "fastapi"}
+
